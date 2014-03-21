@@ -1,0 +1,44 @@
+<%= form_for @swimset, :html => { :class => 'form-horizontal' } do |f| %>
+  <div class="control-group">
+    <%= f.label :practice_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :practice_id, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :qty, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :qty, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :distance, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :distance, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :rori, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :rori, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :rest, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :rest, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :comment, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :comment, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                swimsets_path, :class => 'btn' %>
+  </div>
+<% end %>

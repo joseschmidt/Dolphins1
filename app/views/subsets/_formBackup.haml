@@ -1,0 +1,21 @@
+=simple_form_for (@subset, :html => { :class => 'form-horizontal' }) do |f| 
+  .form-inputs.row
+    = f.input :swimset_id, :wrapper_html => {:class => span2} 
+    = f.input :distance, :wrapper_html => {:class => span2}
+    = f.association :stroke, label_method: :stroke, value_method: :id, :wrapper_html => {:class => span2}
+    = f.association :varience, label_method: :varience, value_method: :id, :wrapper_html => {:class => span2} 
+    = f.input :comment, :wrapper_html => {:class => span2}
+    = f.button :submit, :wrapper_html => {:class => span2}
+
+<%= simple_form_for @subset, :html => { :class => 'form-horizontal' } do |f| %>
+
+<DIV class="row">
+  <DIV class="span1"> <%= f.input :swimset_id, :input_html => {:size => 20} %> </DIV>
+  <DIV class="span1"> <%= f.input :distance, :input_html => {:size => 10} %> </DIV>
+  <DIV class="span3"> <%= f.association :stroke, label_method: :stroke, value_method: :id, :input_html => {:size => 10}  %> </DIV>
+  <DIV class="span3"> <%= f.association :varience, label_method: :varience, value_method: :id, :input_html => {:size => 10}   %> </DIV>
+  <DIV class="span2"> <%= f.input :comment, :input_html => {:size => 10}  %> </DIV>
+  <DIV class="span2"> <%= f.button :submit, :input_html => {:size => 10}  %> </DIV>
+</DIV>
+
+<% end %>

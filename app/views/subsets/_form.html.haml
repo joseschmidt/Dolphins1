@@ -1,0 +1,8 @@
+=simple_form_for @subset, :html => { :class => 'form-inline' } do |f| 
+  .form-inline.row-fluid
+    //= f.input :swimset_id, :wrapper_html => {:class => "span1"} 
+    = f.input :distance, :wrapper_html => {:maxlength =>2, :style=> "width: 30px", :class => "span1"}
+    = f.association :stroke, label_method: :stroke, value_method: :id, :wrapper_html => {:class => "span2"}
+    = f.association :varience, label_method: :varience, value_method: :id, :wrapper_html => {:class => "span2"} 
+    = f.input :comment, :wrapper_html => {:class => "span2"}
+    = f.button :submit, :wrapper_html => {:class => "span5"}

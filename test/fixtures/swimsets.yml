@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  practice_id: 1
+  qty: 1
+  distance: 1
+  rori: false
+  rest: 1
+  comment: MyText
+
+two:
+  practice_id: 1
+  qty: 1
+  distance: 1
+  rori: false
+  rest: 1
+  comment: MyText

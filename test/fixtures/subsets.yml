@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  swimset_id: 1
+  distance: 1
+  stroke_id: 1
+  comment: MyText
+
+two:
+  swimset_id: 1
+  distance: 1
+  stroke_id: 1
+  comment: MyText

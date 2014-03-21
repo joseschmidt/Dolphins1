@@ -1,0 +1,46 @@
+<%= simple_form_for @subset, :html => { :class => 'form-horizontal' } do |f| %>
+  <%= f.input :swimset_id %>
+  <%= f.input :distance %>
+  <%= f.association :Stroke %>
+  <%= f.association :varience %>
+  <%= f.input :comment %>
+  <%= f.button :submit %>
+  <%= f.button :cancel %>
+
+  <div class="control-group">
+    <%= f.label :swimset_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :swimset_id, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :distance, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :distance, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :stroke_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :stroke_id, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :comment, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :comment, :class => 'text_field' %>
+    </div>
+  </div>
+  <div class="control-group">
+    <%= f.label :varience_id, :class => 'control-label' %>
+    <div class="controls">
+      <%= f.text_field :varience_id, :class => 'text_field' %>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <%= f.submit nil, :class => 'btn btn-primary' %>
+    <%= link_to t('.cancel', :default => t("helpers.links.cancel")),
+                subset_path, :class => 'btn' %>
+  </div>
+<% end %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  practicedate: 2014-03-15
+  group: 1
+  lane: 1
+  compstatus: false
+  comment: MyText
+
+two:
+  practicedate: 2014-03-15
+  group: 1
+  lane: 1
+  compstatus: false
+  comment: MyText
